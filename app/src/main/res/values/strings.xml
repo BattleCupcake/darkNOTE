@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">darkNOTE</string>
     <string name="action_settings">Settings</string>
+    <string name="darkNOTE_title">darkNOTE</string>
+    <string name="search">Search</string>
+    <string name="empty_view_text">You can create new tasks using the + button</string>
+    <string name="empty_view_tite">No tasks</string>
 </resources>

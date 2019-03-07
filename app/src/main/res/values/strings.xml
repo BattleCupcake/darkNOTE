@@ -1,10 +1,7 @@
 <resources>
     <string name="app_name">darkNOTE</string>
-    <string name="action_settings">Settings</string>
-    <string name="darkNOTE_title">darkNOTE</string>
-    <string name="empty_view_text">You can create new tasks using the + button</string>
-    <string name="empty_view_tite">No tasks</string>
-
+    <string name="empty_view_title">No tasks</string>
+    <string name="empty_view_text">You can create new tasks \n using the + button</string>
     <string name="create_task">NEW TASK</string>
     <string name="set_reminder">Set reminder</string>
     <string name="set_reminder_short">Reminder</string>
@@ -86,7 +83,7 @@
     <string name="general_notification_3">active tasks:</string>
     <string name="general_notification_4">active tasks:</string>
 
-        <!-- "What's New?" page -->
+    ////////////////<!-- "What's New?" page -->////////////////
     <string name="whats_new_title">What\'s New?</string>
     <string name="whats_new_button_text">Continue</string>
     <string name="whats_new_item_1_title">General Notification</string>
@@ -96,4 +93,9 @@
     <string name="whats_new_item_3_title">Bug fixes</string>
     <string name="whats_new_item_3_text">Many bugs have been fixed</string>
 
+    ///////////////<!-- Rate this app dialog -->///////////////
+    <string name="rate_dialog_message">If you enjoy using this app, would you mind taking a moment to rate it? It won\'t take more than a minute. Thanks for your support!</string>
+    <string name="rate_dialog_ok">Rate now</string>
+    <string name="rate_dialog_cancel">Later</string>
+    <string name="rate_dialog_no">No, Thanks</string>
 </resources>

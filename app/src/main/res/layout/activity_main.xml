@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/coordinator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MainActivity">
+    tools:context="apps.darkNOTE.activity.MainActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -17,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/darkNOTE_title"
+            android:text="@string/app_name"
             android:textColor="@color/white"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -30,7 +31,7 @@
         android:layout_height="wrap_content"
         android:theme="@style/MaterialSearchViewStyle"/>
 
-    <apps.jizzu.simpletodo.adapter.RecyclerViewEmptySupport
+    <apps.darkNOTE.adapter.RecyclerViewEmptySupport
         android:id="@+id/tasksList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -49,7 +50,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:gravity="center"
-            android:text="@string/empty_view_tite"
+            android:text="@string/empty_view_title"
             android:textColor="@color/white"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -71,6 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:src="@drawable/ic_add_white_24dp" />
+        android:src="@drawable/ic_add_white_24dp"
+        app:backgroundTint="@color/colorPrimary" />
 
 </android.support.design.widget.CoordinatorLayout>

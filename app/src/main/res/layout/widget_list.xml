@@ -16,7 +16,7 @@
         android:padding="10dp"
         android:paddingEnd="16dp"
         android:paddingStart="16dp"
-        android:text="@string/darkNOTE_title"
+        android:text="SIMPLE TODO"
         android:textColor="@color/white"
         android:textSize="20sp" />
 

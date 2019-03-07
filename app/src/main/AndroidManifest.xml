@@ -1,24 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.battlecupcake.darknote">
+    package="apps.darkNOTE">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-            android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
-            android:label="@string/app_name"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"
-            android:theme="@style/AppTheme">
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
         <activity
-                android:name=".activity.MainActivity"
-                android:label="@string/app_name"
-                android:theme="@style/AppTheme.NoActionBar">
+            android:name="apps.darkNOTE.activity.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="apps.darkNOTE.activity.AddTaskActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="apps.darkNOTE.alarm.AlarmReceiver"
+            android:process=":remote" />
+        <receiver android:name="apps.darkNOTE.alarm.AlarmSetter">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="apps.darkNOTE.activity.EditTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="apps.darkNOTE.settings.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PreferenceScreen" />
+        <activity
+            android:name="apps.darkNOTE.settings.LicensesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PreferenceScreen" />
+
+        <service
+            android:name="apps.darkNOTE.widget.WidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver android:name="apps.darkNOTE.widget.WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_metadata" />
+        </receiver>
     </application>
 
 </manifest>

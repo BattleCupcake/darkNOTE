@@ -107,7 +107,7 @@ public class SettingsFragment extends PreferenceFragment {
         });
 
         findPreference("about_version").setOnPreferenceClickListener(
-                createPreferenceClickListener("https://github.com/Jizzu/SimpleToDo")
+                createPreferenceClickListener("https://github.com/BattleCupcake/darkNOTE")
         );
 
         Preference rateThisApp = findPreference("rate_app");
@@ -130,7 +130,7 @@ public class SettingsFragment extends PreferenceFragment {
             public boolean onPreferenceClick(Preference preference) {
                 Intent email = new Intent(Intent.ACTION_SENDTO);
                 email.setData(new Uri.Builder().scheme("mailto").build());
-                email.putExtra(Intent.EXTRA_EMAIL, new String[]{"ilya.ponomarenko.dev@gmail.com"});
+                email.putExtra(Intent.EXTRA_EMAIL, new String[]{"maxim22ananin@gmail.com"});
                 email.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.feedback_title));
                 email.putExtra(Intent.EXTRA_TEXT, getString(R.string.feedback_device_info) + "\n" + DeviceInfo.getDeviceInfo()
                         + "\n" + getString(R.string.feedback_app_version) + BuildConfig.VERSION_NAME

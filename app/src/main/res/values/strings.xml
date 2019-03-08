@@ -28,7 +28,7 @@
     <string name="preferences_about_licenses_summary">Used libraries</string>
     <string name="preferences_about_licenses_title">Licenses</string>
 
-    <string name="feedback_title">Simple ToDo - Feedback</string>
+    <string name="feedback_title">darkNOTE - Feedback</string>
     <string name="feedback_device_info">My device info: </string>
     <string name="feedback_app_version">App version: </string>
     <string name="feedback">Feedback: </string>
@@ -83,7 +83,7 @@
     <string name="general_notification_3">active tasks:</string>
     <string name="general_notification_4">active tasks:</string>
 
-    ////////////////<!-- "What's New?" page -->////////////////
+    <!-- "What's New?" page -->
     <string name="whats_new_title">What\'s New?</string>
     <string name="whats_new_button_text">Continue</string>
     <string name="whats_new_item_1_title">General Notification</string>
@@ -93,7 +93,7 @@
     <string name="whats_new_item_3_title">Bug fixes</string>
     <string name="whats_new_item_3_text">Many bugs have been fixed</string>
 
-    ///////////////<!-- Rate this app dialog -->///////////////
+    <!-- Rate this app dialog -->
     <string name="rate_dialog_message">If you enjoy using this app, would you mind taking a moment to rate it? It won\'t take more than a minute. Thanks for your support!</string>
     <string name="rate_dialog_ok">Rate now</string>
     <string name="rate_dialog_cancel">Later</string>
